@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&A SHOPIE</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="preload" as="image" href="./images/P1.jpg">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo"><img src="./images/logo.png" width="132" height="27" alt="shoppie home"></a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="./Shop.html" class="navbar-link">Shop</a></li>
+          <li><a href="./Blog.html" class="navbar-link">Blog</a></li>
+          
+        </ul>
+        <a href="cart.html" class="cart-btn">
+          <ion-icon name="bag" aria-hidden="true"></ion-icon>
+          <span class="span">Cart</span>
+        </a>
+        
+        <a href="./Contactus.html" class="btn">Contact Us</a>
+      </nav>
+      <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle title">Best Quality With Low Price!!</p>
+            <h1 class="h1 hero-title title">Man Clothing  <br> collection</h1>
+            <p class="hero-text">Welcome to D&A SHOPIE - Your Ultimate Destination for Quality Products! Explore a World of Endless Possibilities, Where Every Click Unveils Exciting Finds. Start Your Shopping Journey Today and Experience Convenience, Quality, and Style Like Never Before!</p>
+            <a href="#" class="btn btn-primary">
+              <span class="span">Shop Now</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+          <div class="hero-banner">
+            <figure class="img-holder" style="--width: 704; --height: 700;">
+              <img src="./images/P1.jpg" width="704" height="700" alt="hero banner" class="img-cover">
+            </figure>
+            <img src="./images/hero-shape-1.png" width="255" height="249" alt="shape" class="shape shape-1">
+          </div>
+          <img src="./images/hero-shape-2.png" width="360" height="133" alt="shape" class="shape shape-2">
+        </div>
+      </div>
+      <section class="section product" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title title text-center">Explore new arrivals</h2>
+
+          <ul class="product-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P2.jpeg" width="448" height="470" loading="lazy"
+                      alt="Short Sleeve Shirt" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Short Sleeve Shirt', price: 1200.00, image: './images/P2.jpeg' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h4 title">
+                    <a href="#" class="card-title">Short Sleeve Shirt</a>
+                  </h3>
+
+                  <span class="price">Rs.800.00</span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P3.webp" width="448" height="470" loading="lazy"
+                      alt="Sunglasses" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Sunglasses', price: 1800.00,image: './images/P3.webp' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h4 title">
+                    <a href="#" class="card-title">Sunglasses</a>
+                  </h3>
+
+                  <span class="price">Rs.1800.00</span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P4.webp" width="448" height="470" loading="lazy"
+                      alt="Cargo Trouser" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Cargo Trouser', price: 2000.00,image: './images/P4.webp' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h4 title">
+                    <a href="#" class="card-title">Cargo Trouser</a>
+                  </h3>
+
+                  <span class="price">Rs.2000.00</span>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> 
+      <!-- Feature product -->
+      <section class="section feature" aria-label="feature-label">
+        <div class="container">
+
+          <h2 class="h2 section-title title text-center" id="feature-label">Featured products</h2>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P5.webp" width="448" height="470" loading="lazy"
+                      alt="Acne Baseball Cap" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Acne Baseball Cap', price: 500.00,image: './images/P5.webp' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Acne Baseball Cap</a>
+                  </h3>
+
+                  <span class="price">Rs.500.00</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P6.jpg" width="448" height="470" loading="lazy"
+                      alt="Shirt" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Shirt', price: 850.00,image: './images/P6.jpg' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Shirt</a>
+                  </h3>
+
+                  <span class="price">Rs.1200.00</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/product-6.png" width="448" height="470" loading="lazy"
+                      alt="Garcons Perfume" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Garcons Perfume', price: 1800.00,image: './images/product-6.png' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Garcons Perfume</a>
+                  </h3>
+
+                  <span class="price">Rs.1800.00</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P7.webp" width="448" height="470" loading="lazy"
+                      alt="Air Sneaker" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Air Sneaker', price: 2800.00,image: './images/P7.webp' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Air Sneaker</a>
+                  </h3>
+
+                  <span class="price">Rs.2800.00</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P8.webp" width="448" height="470" loading="lazy"
+                      alt="Ribbed Beanie Hat" class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Ribbed Beanie Hat', price: 400.00,image: './images/P8.webp' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Ribbed Beanie Hat</a>
+                  </h3>
+
+                  <span class="price">Rs.400.00</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card text-center">
+
+                <div class="card-banner">
+
+                  <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+                    <img src="./images/P9.jpeg" width="448" height="470" loading="lazy" alt="Acronym Khaki"
+                      class="img-cover">
+                  </figure>
+
+                  <button class="btn product-btn" onclick="addToCart({ name: 'Acronym Khaki', price: 1600.00,image: './images/P9.jpeg' })">
+                    <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                    <span class="span">Add To Cart</span>
+                </button>
+                
+                </div>
+
+                <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Acronym Khaki</a>
+                  </h3>
+
+                  <span class="price">Rs.1600.00</span>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="./Shop.html" class="btn btn-secondary">View All Products</a>
+          
+
+        </div>
+      </section>
+
+      <!-- OFFER -->
+      <section class="offer has-bg-image" style="background-image: url('./images/offer-bg.png')">
+        <div class="container">
+
+          <div class="offer-card">
+
+            <h2 class="title card-title">35% Off</h2>
+
+            <p class="card-text">
+              Unlock Savings Galore with Our Exclusive 35% Off Deals! Dive into a Treasure Trove of Discounts Where Every Purchase Is a Win. From Fashion to Electronics, Home Essentials to Beauty Must-Haves, We've Got Something for Everyone at Unbeatable Prices. Don't Miss Out on This Limited-Time Offer - Shop Now and Save Big While Stocks Last!
+            </p>
+
+            <a href="#" class="btn btn-secondary">
+              <span class="span">Shop Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+     
+      <div id="notification"></div>
+      
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer top content -->
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./images/logo.png" width="132" height="27" loading="lazy" alt="shoppie home">
+          </a>
+
+          <p class="footer-text">
+            Elevating Your Experience: Where Quality Meets Innovation. Discover the Difference with Our Unmatched Selection, Exceptional Service, and Commitment to Excellence. Join Us on a Journey of Distinction and Experience Shopping Redefined.
+          </p>
+
+          <ul class="social-list">
+
+            <!-- <li>
+              <a href="#" class="social-link"></a>
+            </li> -->
+            
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title title">Contact info</p>
+
+            <address class="footer-text">
+              18 Sector Jodhpur, RAJASTHAN <br>
+              INDIA
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info.D&ASHOPIE@support.com" class="email">info.D&ASHOPIE@support.com</a>
+          </li>
+
+          <li>
+            <a href="tel:+91 8949497370" class="call">+91 8949497370</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title title">Subscribe newsletter</p>
+
+          <input type="email" name="email_address" placeholder="Enter your email address" required autocomplete="off"
+            class="input-field">
+
+          <button class="btn btn-secondary">Subscribe</button>
+
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <!-- Footer bottom content -->
+        <div class="wrapper">
+          <div class="link-wrapper">
+
+            <a href="./Shop.html" class="footer-bottom-link">Shop</a>
+            <a href="./Contactus.html" class="footer-bottom-link">Contact Us</a>
+
+          </div>
+
+          <div class="link-wrapper">
+            <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; 2022 codewithsadee, All Rights Reserved
+        </p>
+
+      </div>
+
+      <img src="./images/footer-shape-1.png" width="245" height="165" loading="lazy" alt="shape"
+        class="shape shape-1">
+
+      <img src="./images/footer-shape-2.png" width="138" height="316" loading="lazy" alt="shape"
+        class="shape shape-2">
+
+      <img src="./images/footer-shape-3.png" width="346" height="92" loading="lazy" alt="shape"
+        class="shape shape-3">
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="./JS/script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Your Website Name</title>
+  <!-- Add your CSS files here -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="preload" as="image" href="./images/hero-banner.png">
+</head>
+<body>
+  <!-- Add your header section here -->
+  <header class="header" data-header>
+    <div class="container">
+        <a href="#" class="logo"><img src="./images/logo.png" width="132" height="27" alt="shoppie home"></a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="./index.html" class="navbar-link">Home</a></li>
+          <li><a href="./Shop.html" class="navbar-link">Shop</a></li>
+          <li><a href="./Blog.html" class="navbar-link">Blog</a></li>
+          
+        </ul>
+        <a href="cart.html" class="cart-btn">
+            <ion-icon name="bag" aria-hidden="true"></ion-icon>
+            <span class="span">Cart</span>
+          </a>
+          
+        <!-- <a href="#" class="btn">Contact Us</a> -->
+      </nav>
+      <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Main content area -->
+  <main>
+    <br><br>
+    <br><br>
+    <br><br>
+    <section class="contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <p>Do you have any inquiries, suggestions, or simply want to say hello? We'd love to hear from you! Feel free to drop us a message using the form below.</p>
+          <p>Whether you have a question, need assistance with your order, or simply want to share feedback, we're here to help! Our dedicated team is committed to providing exceptional service and ensuring your experience with us is nothing short of excellent. Don't hesitate to reach out to us for any inquiries, big or small. Your satisfaction is our priority, and we're eager to assist you every step of the way. Feel free to connect with us anytime – we're just a message away!</p><br>
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            </div>
+            <br>
+            <button type="submit" class="btn">Send Message</button>
+            <br><br>
+          </form>
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> 18 Sector Jodhpur, Rajasthan, India</p>
+            <p><strong>Email:</strong> info.D&ASHOPIE@support.com</p>
+            <p><strong>Phone:</strong> +91 8949497370</p>
+            <p>Feel free to connect with us on social media for the latest updates, promotions, and more:</p>
+          </div>
+        </div>
+      </section>
+      
+      
+  </main>
+
+  <!-- Add your footer section here -->
+
+  <!-- Add your JavaScript files here -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer top content -->
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./images/logo.png" width="132" height="27" loading="lazy" alt="shoppie home">
+          </a>
+
+          <p class="footer-text">
+            Elevating Your Experience: Where Quality Meets Innovation. Discover the Difference with Our Unmatched Selection, Exceptional Service, and Commitment to Excellence. Join Us on a Journey of Distinction and Experience Shopping Redefined.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+  
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title title">Contact info</p>
+
+            <address class="footer-text">
+              18 Sector Jodhpur, RAJASTHAN <br>
+              INDIA
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info.D&ASHOPIE@support.com" class="email">info.D&ASHOPIE@support.com</a>
+          </li>
+
+          <li>
+            <a href="tel:+91 8949497370" class="call">+91 8949497370</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title title">Subscribe newsletter</p>
+
+          <input type="email" name="email_address" placeholder="Enter your email address" required autocomplete="off"
+            class="input-field">
+
+          <button class="btn btn-secondary">Subscribe</button>
+
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <!-- Footer bottom content -->
+        <div class="wrapper">
+          <div class="link-wrapper">
+
+            <a href="./Shop.html" class="footer-bottom-link">Shop</a>
+            
+            <!-- <a href="#" class="footer-bottom-link">Contact Us</a> -->
+
+          </div>
+
+          <div class="link-wrapper">
+            <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; 2022 codewithsadee, All Rights Reserved
+        </p>
+
+      </div>
+
+      <img src="./images/footer-shape-1.png" width="245" height="165" loading="lazy" alt="shape"
+        class="shape shape-1">
+
+      <img src="./images/footer-shape-2.png" width="138" height="316" loading="lazy" alt="shape"
+        class="shape shape-2">
+
+      <img src="./images/footer-shape-3.png" width="346" height="92" loading="lazy" alt="shape"
+        class="shape shape-3">
+
+      </div>
+    </div>
+  </footer>
+  <script src="./JS/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
